@@ -1,5 +1,5 @@
 let _ = 0
-let _2 = 0
+let ha = 0
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         basic.clearScreen()
@@ -14,11 +14,11 @@ basic.forever(function () {
 basic.forever(function () {
     if (input.buttonIsPressed(Button.B)) {
         basic.clearScreen()
-        led.plot(0, _2)
+        led.plot(_, ha)
         basic.pause(100)
-        _2 += 1
-        if (_2 > 4) {
-            _2 = 0
+        ha += 1
+        if (ha > 4) {
+            _ = 0
         }
     }
 })
